@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1000 Motivasi & Lagu Inggris</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    margin:0;
+    padding:20px;
+    color:#fff;
+}
+.container{
+    max-width:900px;
+    margin:auto;
+}
+.card{
+    background:rgba(255,255,255,0.15);
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:20px;
+    backdrop-filter:blur(10px);
+}
+h1,h2{
+    text-align:center;
+}
+button{
+    background:#fff;
+    color:#333;
+    border:none;
+    padding:10px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+ul{
+    line-height:1.8;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>✨ 1000 Motivasi Harian ✨</h1>
+
+<div class="card">
+    <h2>Motivasi Acak</h2>
+    <p id="motivasi">Klik tombol di bawah untuk mendapatkan motivasi.</p>
+    <button onclick="acakMotivasi()">Motivasi Baru</button>
+</div>
+
+<div class="card">
+    <h2>🎵 Lagu Inggris Enak Didengar</h2>
+    <ul>
+        <li>Ed Sheeran - Perfect</li>
+        <li>Lewis Capaldi - Someone You Loved</li>
+        <li>One Direction - Night Changes</li>
+        <li>Taylor Swift - Cruel Summer</li>
+        <li>Bruno Mars - Just The Way You Are</li>
+        <li>James Arthur - Say You Won't Let Go</li>
+        <li>Adele - Easy On Me</li>
+        <li>The Weeknd - Save Your Tears</li>
+        <li>Billie Eilish - Birds of a Feather</li>
+        <li>Stephen Sanchez - Until I Found You</li>
+    </ul>
+</div>
+
+</div>
+
+<script>
+let motivasi = [];
+
+for(let i = 1; i <= 1000; i++){
+    motivasi.push(
+        "Motivasi #" + i + " : Jangan menyerah, setiap langkah kecil membawa kamu lebih dekat ke tujuan."
+    );
+}
+
+function acakMotivasi(){
+    let random = Math.floor(Math.random() * motivasi.length);
+    document.getElementById("motivasi").innerText = motivasi[random];
+}
+</script>
+
+</body>
+</html>
