@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1000 Motivasi & 30 Juz Al-Qur'an</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f7fa;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+button{
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+ul{
+    padding-left:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>✨ 1000 Motivasi Islami ✨</h1>
+    <p>Motivasi Harian & Daftar 30 Juz Al-Qur'an</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Motivasi Hari Ini</h2>
+        <p id="motivasi">
+            Jangan putus asa dari rahmat Allah. Setiap kesulitan pasti ada kemudahan.
+        </p>
+        <button onclick="acakMotivasi()">Motivasi Baru</button>
+    </div>
+
+    <div class="card">
+        <h2>Daftar 30 Juz Al-Qur'an</h2>
+        <ul>
+            <li>Juz 1 - Al-Fatihah sampai Al-Baqarah 141</li>
+            <li>Juz 2 - Al-Baqarah 142-252</li>
+            <li>Juz 3 - Al-Baqarah 253 - Ali Imran 92</li>
+            <li>Juz 4 - Ali Imran 93 - An-Nisa 23</li>
+            <li>Juz 5 - An-Nisa 24-147</li>
+            <li>Juz 6 - An-Nisa 148 - Al-Maidah 81</li>
+            <li>Juz 7 - Al-Maidah 82 - Al-An'am 110</li>
+            <li>Juz 8 - Al-An'am 111 - Al-A'raf 87</li>
+            <li>Juz 9 - Al-A'raf 88 - Al-Anfal 40</li>
+            <li>Juz 10 - Al-Anfal 41 - At-Taubah 92</li>
+            <li>Juz 11 - At-Taubah 93 - Hud 5</li>
+            <li>Juz 12 - Hud 6 - Yusuf 52</li>
+            <li>Juz 13 - Yusuf 53 - Ibrahim 52</li>
+            <li>Juz 14 - Al-Hijr - An-Nahl 128</li>
+            <li>Juz 15 - Al-Isra - Al-Kahfi 74</li>
+            <li>Juz 16 - Al-Kahfi 75 - Ta-Ha 135</li>
+            <li>Juz 17 - Al-Anbiya - Al-Hajj 78</li>
+            <li>Juz 18 - Al-Mu'minun - Al-Furqan 20</li>
+            <li>Juz 19 - Al-Furqan 21 - An-Naml 55</li>
+            <li>Juz 20 - An-Naml 56 - Al-Ankabut 45</li>
+            <li>Juz 21 - Al-Ankabut 46 - Al-Ahzab 30</li>
+            <li>Juz 22 - Al-Ahzab 31 - Yasin 27</li>
+            <li>Juz 23 - Yasin 28 - Az-Zumar 31</li>
+            <li>Juz 24 - Az-Zumar 32 - Fussilat 46</li>
+            <li>Juz 25 - Fussilat 47 - Al-Jatsiyah 37</li>
+            <li>Juz 26 - Al-Ahqaf - Adz-Dzariyat 30</li>
+            <li>Juz 27 - Adz-Dzariyat 31 - Al-Hadid 29</li>
+            <li>Juz 28 - Al-Mujadilah - At-Tahrim 12</li>
+            <li>Juz 29 - Al-Mulk - Al-Mursalat</li>
+            <li>Juz 30 - An-Naba - An-Nas</li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+const motivasi = [
+"Jangan putus asa dari rahmat Allah.",
+"Kesabaran adalah kunci kemenangan.",
+"Berdoalah dan terus berusaha.",
+"Allah tidak membebani seseorang melainkan sesuai kemampuannya.",
+"Setiap kesulitan akan diikuti kemudahan.",
+"Tetap semangat mengejar cita-cita.",
+"Syukuri apa yang dimiliki hari ini.",
+"Kebaikan sekecil apa pun akan bernilai di sisi Allah.",
+"Belajar hari ini adalah investasi masa depan.",
+"Orang sukses adalah orang yang tidak menyerah."
+];
+
+function acakMotivasi(){
+    const random = Math.floor(Math.random() * motivasi.length);
+    document.getElementById("motivasi").innerText = motivasi[random];
+}
+</script>
+
+</body>
+</html>
